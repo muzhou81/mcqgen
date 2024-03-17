@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mcqgenrators
+Version: 0.0.1
+Author: peng ni
+Author-email: ayx81@qq.com
+Requires-Dist: openai
+Requires-Dist: langchain
+Requires-Dist: streamlit
+Requires-Dist: python-dotenv
+Requires-Dist: PyPDF2
