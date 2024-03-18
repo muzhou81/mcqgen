@@ -10,7 +10,7 @@ from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 from src.mcqgenerator.logger import logging
 
 #loading json file
-with open('E:/shaw/mcqgen/Response.json','r') as file:
+with open('E:\shaw\mcqgen\Response.json','r') as file:
     RESPONSE_JSON = json.load(file)
 
 #creating a title for the app
@@ -19,7 +19,7 @@ st.title("MCQs Creator Application with Langchain")
 #Create a form using st.form
 with st.form("user_inputs"):
     #File Upload
-    uploaded_file = st.uploader("Upload a PDF or text file")
+    uploaded_file = st.file_uploader("Upload a PDF or text file")
 
     #Input Fields
     mcq_count=st.number_input("No. of MCQs", min_value=3, max_value=50)
